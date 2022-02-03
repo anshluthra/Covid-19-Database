@@ -36,7 +36,7 @@ jobs:
 
       - name: execute py script # run Main Script v1.py to get the latest data
         run: |
-          python Main Script v1.py
+          python MainScriptv1.py
           
       - name: commit files
         run: |
