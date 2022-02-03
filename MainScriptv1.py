@@ -167,7 +167,7 @@ wsRecover = wbRecover.active
 for xyz in range(2,ws.max_row):
     if (ws['A'+str(xyz)].value==DateForMaster):
         print ("records already updated ")
-        
+        '''
         os.remove("Dose.csv")
         os.remove("Dose.json")
         os.remove("Dose.xlsx")
@@ -175,6 +175,7 @@ for xyz in range(2,ws.max_row):
         os.remove("Recover.json")
         os.remove("Recover.xlsx")
         os.remove("Recover2.json")
+        '''
         sys.exit()
         break
 
@@ -308,6 +309,7 @@ elapsed_time_fl = (time.time() - start)
 print(elapsed_time_fl)
 
 #deleting temp files
+'''
 import os
 os.remove("Dose.csv")
 os.remove("Dose.json")
@@ -316,6 +318,7 @@ os.remove("Recover.csv")
 os.remove("Recover.json")
 os.remove("Recover.xlsx")
 os.remove("Recover2.json")
+'''
 #data inconsistency checks
 for x in range(1,ws.max_row):
     if (ws['A'+str(x)].value==DateForMaster):
