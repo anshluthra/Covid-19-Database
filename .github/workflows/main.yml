@@ -35,7 +35,8 @@ jobs:
           pip install numpy
 
       - name: execute py script # run Main Script v1.py to get the latest data
-        run: Main Script v1.py
+        run: |
+          python Main Script v1.py
           
       - name: commit files
         run: |
