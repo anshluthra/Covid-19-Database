@@ -8,7 +8,7 @@ from datetime import datetime
 import time
 
 #Download dose json file
-file_url = "https://www.mygov.in/sites/default/files/covid/vaccine/covid_vaccine_timeline.json"
+file_url =os.environ['URL1']
 
 r = requests.get(file_url, stream = True)
 
@@ -20,7 +20,7 @@ with open("Dose.json","wb") as pdf:
                pdf.write(chunk)
 
 #download recover json file
-file_url = "https://www.mygov.in/sites/default/files/covid/covid_state_counts_ver1.json"
+file_url =os.environ['URL2']
 
 r = requests.get(file_url, stream = True)
 
