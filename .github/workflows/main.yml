@@ -38,6 +38,9 @@ jobs:
           export URL2= ${{ secret.URL2 }}
 
       - name: execute py script # run Main Script v1.py to get the latest data
+        env:
+          URL1: ${{ secrets.URL1 }}
+          URL2: ${{ secrets.URL2 }}   
         run: |
           python MainScriptv1.py
           
