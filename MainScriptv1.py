@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 #importing packages
 flag=0
 import requests
@@ -9,7 +7,7 @@ from datetime import datetime
 import time
 
 #Download dose json file
-file_url =os.environ.get("URL1")
+file_url=os.environ.get("URL1")
 
 r = requests.get(file_url, stream = True)
 
@@ -21,7 +19,7 @@ with open("Dose.json","wb") as pdf:
                pdf.write(chunk)
 
 #download recover json file
-file_url =os.environ.get("URL2")
+file_url=os.environ.get("URL2")
 
 r = requests.get(file_url, stream = True)
 
