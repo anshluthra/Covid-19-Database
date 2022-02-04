@@ -164,7 +164,7 @@ wsDose = wbDose.active
 wbRecover = load_workbook('Recover.xlsx')
 wsRecover = wbRecover.active
 #check condition for data is already upadted or not
-'''
+
 for xyz in range(2,ws.max_row):
     if (ws['A'+str(xyz)].value==DateForMaster):
         print ("records already updated ")
@@ -177,7 +177,7 @@ for xyz in range(2,ws.max_row):
         os.remove("Recover2.json")
         sys.exit()
         break
-'''
+
 #checking the data is available or not
 #for dose
 for d in range(1,wsDose.max_row):
