@@ -34,6 +34,8 @@ jobs:
           pip install pandas
           pip install numpy
           pip install requests
+          export URL1= {{ secret.URL1 }}
+          export URL2= {{ secret.URL2 }}
 
       - name: execute py script # run Main Script v1.py to get the latest data
         run: |
