@@ -160,6 +160,7 @@ from openpyxl import*
 from openpyxl.utils import*
 import sys
 from datetime import datetime
+from datetime import date
 import time
 #Main writer program
 
@@ -167,8 +168,8 @@ start = time.time()
 
 current_time = datetime.now()
 
-DateForMaster=("%s/%s/%s" % (current_time.month, current_time.day, current_time.year))#3/31/2020
-    
+#DateForMaster=("%s/%s/%s" % (current_time.day, current_time.month, current_time.year))#3/31/2020
+DateForMaster=date.today()
     
 Day=current_time.day
 Month=current_time.month
